@@ -1,0 +1,23 @@
+apply plugin: 'com.github.panpf.bintray-publish'
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+publish {
+    artifactId = project.name
+    publishVersion = '1.0.0'
+    userOrg = 'neday'
+    repoName = 'sisyphus'
+    groupId = "com.hccn.sisyphus"
+    licences = ['MIT']
+    desc = '🔥No repackage, switch environment with one click.（无需重新打包，一键切换环境 ）'
+    website = 'https://github.com/nEdAy/Sisyphus'
+    bintrayUser = localProperties.getProperty('bintray.user')
+    bintrayKey = localProperties.getProperty('bintray.key')
+    dryRun = false
+}

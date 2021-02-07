@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hccn.sisyphus">
+
+    <application>
+        <activity
+            android:name=".ui.SisyphusActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+    </application>
+</manifest>

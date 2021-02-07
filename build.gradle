@@ -1,0 +1,31 @@
+buildscript {
+    ext.kotlin_version = '1.4.30'
+    repositories {
+        maven { url 'https://nexus.prod.hccn/repository/releases' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        mavenCentral()
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.github.panpf.bintray-publish:bintray-publish:1.0.0'
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://nexus.prod.hccn/repository/releases' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        mavenCentral()
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

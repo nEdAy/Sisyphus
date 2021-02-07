@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sisyphus_app_name">view</string>
+    <string name="sisyphus">切换环境</string>
+</resources>

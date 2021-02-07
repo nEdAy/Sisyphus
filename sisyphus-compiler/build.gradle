@@ -1,0 +1,12 @@
+apply plugin: 'java-library'
+apply from: "../publish.gradle"
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
+
+dependencies {
+    api project(':sisyphus-basis')
+    api 'com.squareup:javapoet:1.13.0'
+    implementation 'com.google.auto.service:auto-service-annotations:1.0-rc7'
+    annotationProcessor 'com.google.auto.service:auto-service:1.0-rc7'
+}
