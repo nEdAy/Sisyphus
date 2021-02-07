@@ -11,7 +11,7 @@ class SettingsFragment : Fragment(R.layout.settings_fragment) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        if (BuildConfig.FLAVOR === "prod") {
+        if (!BuildConfig.DEBUG && BuildConfig.FLAVOR === "prod") {
             view.findViewById<View>(R.id.bt_switch_environment).visibility = View.GONE
         } else {
             view.findViewById<View>(R.id.bt_switch_environment)
