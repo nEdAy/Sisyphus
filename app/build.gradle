@@ -48,6 +48,8 @@ dependencies {
 
     // Sisyphus
     implementation 'androidx.security:security-crypto:1.1.0-alpha02'
+    // implementation 'com.hccn.sisyphus:sisyphus-ui:1.0.0'
+    // kapt 'com.hccn.sisyphus:Sisyphus-compiler:1.0.0'
     implementation project(':sisyphus-ui')
     kapt project(':sisyphus-compiler')
 
