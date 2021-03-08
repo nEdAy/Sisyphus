@@ -51,6 +51,7 @@ version|[ ![Download](https://api.bintray.com/packages/neday/sisyphus/sisyphus-u
  ```
  dependencies {
          ...
+         implementation 'androidx.security:security-crypto:1.1.0-alpha02'
          implementation "com.hccn.sisyphus:sisyphus-ui:$version"
          annotationProcessor "com.hccn.sisyphus:sisyphus-compiler:$version"
  }
@@ -63,6 +64,7 @@ version|[ ![Download](https://api.bintray.com/packages/neday/sisyphus/sisyphus-u
  ...
  dependencies {
 	     ...
+            implementation 'androidx.security:security-crypto:1.1.0-alpha02'
 	        implementation "com.hccn.sisyphus:sisyphus-ui:$version"
 	        kapt "com.hccn.sisyphus:Sisyphus-compiler:$version"
  }
