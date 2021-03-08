@@ -360,6 +360,7 @@ class SisyphusActivity : FragmentActivity(R.layout.sisyphus_activity) {
             TYPE_MODULE, TYPE_ENVIRONMENT
         }
 
+        @JvmStatic
         fun launch(context: Context) {
             context.startActivity(Intent(context, SisyphusActivity::class.java))
         }
