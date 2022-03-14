@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hccn.sisyphus">
+    package="cn.neday.sisyphus">
 
     <application>
         <activity

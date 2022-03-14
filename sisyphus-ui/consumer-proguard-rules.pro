@@ -24,4 +24,4 @@
 -dontwarn javax.lang.**
 -dontwarn javax.tools.**
 -dontwarn com.squareup.javapoet.**
--keep class com.hccn.sisyphus.** { *; }
+-keep class cn.neday.sisyphus.** { *; }
