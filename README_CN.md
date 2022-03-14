@@ -42,13 +42,6 @@ Sisyphus 就是为了解决以上问题而设计的，它具有以下几个特�
 
 ### 使用方法
 
-最新版本：
-
-module|sisyphus-ui|sisyphus-compiler
-:---:|:---:|:---:
-version|[ ![Download](https://api.bintray.com/packages/neday/sisyphus/sisyphus-ui/images/download.svg) ](https://bintray.com/neday/sisyphus/sisyphus-ui/_latestVersion) | [ ![Download](https://api.bintray.com/packages/neday/sisyphus/sisyphus-compiler/images/download.svg) ](https://bintray.com/neday/sisyphus/sisyphus-compiler/_latestVersion)
-
-
 1. 配置项目的 build.gradle
 
 	- java 版
@@ -56,24 +49,24 @@ version|[ ![Download](https://api.bintray.com/packages/neday/sisyphus/sisyphus-u
 	    ```
 	    dependencies {
 	        ...
-            implementation 'androidx.security:security-crypto:1.1.0-alpha02'
-	        implementation "com.hccn.sisyphus:sisyphus-ui:$version"
-	        annotationProcessor "com.hccn.sisyphus:sisyphus-compiler:$version"
+            implementation 'androidx.security:security-crypto:1.1.0-alpha03'
+	        implementation "cn.neday.sisyphus:sisyphus-ui:$version"
+	        annotationProcessor "cn.neday.sisyphus:sisyphus-compiler:$version"
 	    }
 	    ```
    
     - kotlin 版
 
-	    ```
-	    apply plugin: 'kotlin-kapt'
-	    ...
-	    dependencies {
-	        ...
-            implementation 'androidx.security:security-crypto:1.1.0-alpha02'
-	        implementation "com.hccn.sisyphus:sisyphus-ui:$version"
-	        kapt "com.hccn.sisyphus:Sisyphus-compiler:$version"
-	    }
-	    ```
+        ```
+        apply plugin: 'kotlin-kapt'
+        ...
+        dependencies {
+            ...
+            implementation 'androidx.security:security-crypto:1.1.0-alpha03'
+            implementation "cn.neday.sisyphus:sisyphus-ui:$version"
+            kapt "cn.neday.sisyphus:Sisyphus-compiler:$version"
+        }
+        ```
 
 2. 编写 EnvironmentConfig 文件
 

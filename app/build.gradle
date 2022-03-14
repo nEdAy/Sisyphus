@@ -40,7 +40,7 @@ android {
 }
 
 dependencies {
-    implementation "androidx.core:core-ktx:1.6.0"
+    implementation "androidx.core:core-ktx:1.7.0"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
     implementation 'androidx.appcompat:appcompat:1.4.1'
@@ -48,10 +48,10 @@ dependencies {
 
     // Sisyphus
     implementation 'androidx.security:security-crypto:1.1.0-alpha03'
-    // implementation 'cn.neday.sisyphus:sisyphus-ui:1.0.0'
-    // kapt 'cn.neday.sisyphus:Sisyphus-compiler:1.0.0'
-    implementation project(':sisyphus-ui')
-    kapt project(':sisyphus-compiler')
+    implementation 'cn.neday.sisyphus:sisyphus-ui:1.0.0'
+    kapt 'cn.neday.sisyphus:Sisyphus-compiler:1.0.0'
+    // implementation project(':sisyphus-ui')
+    // kapt project(':sisyphus-compiler')
 
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'

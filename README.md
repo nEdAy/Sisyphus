@@ -40,20 +40,14 @@ Now you might think: "These functions I can do with Gradle, why use Sisyphus?" L
 
 1. Configuring the project's build.gradle
 
- Latest Version：
-
- module|sisyphus-ui|sisyphus-compiler
-:---:|:---:|:---:
-version|[ ![Download](https://api.bintray.com/packages/neday/sisyphus/sisyphus-ui/images/download.svg) ](https://bintray.com/neday/sisyphus/sisyphus-ui/_latestVersion) | [ ![Download](https://api.bintray.com/packages/neday/sisyphus/sisyphus-compiler/images/download.svg) ](https://bintray.com/neday/sisyphus/sisyphus-compiler/_latestVersion)
-
  - java project
 
  ```
  dependencies {
          ...
-         implementation 'androidx.security:security-crypto:1.1.0-alpha02'
-         implementation "com.hccn.sisyphus:sisyphus-ui:$version"
-         annotationProcessor "com.hccn.sisyphus:sisyphus-compiler:$version"
+         implementation 'androidx.security:security-crypto:1.1.0-alpha03'
+         implementation "cn.neday.sisyphus:sisyphus-ui:$version"
+         annotationProcessor "cn.neday.sisyphus:sisyphus-compiler:$version"
  }
  ```
 
@@ -64,9 +58,9 @@ version|[ ![Download](https://api.bintray.com/packages/neday/sisyphus/sisyphus-u
  ...
  dependencies {
 	     ...
-            implementation 'androidx.security:security-crypto:1.1.0-alpha02'
-	        implementation "com.hccn.sisyphus:sisyphus-ui:$version"
-	        kapt "com.hccn.sisyphus:Sisyphus-compiler:$version"
+            implementation 'androidx.security:security-crypto:1.1.0-alpha03'
+	        implementation "cn.neday.sisyphus:sisyphus-ui:$version"
+	        kapt "cn.neday.sisyphus:Sisyphus-compiler:$version"
  }
  ```
 
